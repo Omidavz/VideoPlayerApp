@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant"
+    tools:context=".MainActivity">
+
+    <VideoView
+        android:id="@+id/video_vv"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/video_et"
+        android:layout_width="366dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:hint="Put Video Link Here"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_vv" />
+
+    <Button
+        android:id="@+id/play_btn"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_et" />
+
+    <Button
+        android:id="@+id/new_video_btn"
+        android:layout_width="102dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:text="New Video"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video_et" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
